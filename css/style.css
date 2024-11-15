@@ -1,0 +1,104 @@
+    /* font-family: "Roboto Slab", serif;
+font-family: "Indie Flower", cursive; */
+
+    h1 {
+        font-size: 120px;
+        font-weight: 700;
+        font-family: "Indie Flower", cursive;
+        text-shadow: rgba(255, 255, 255, 0.3) 0px 5px 20px;
+
+    }
+
+    h5 {
+        font-weight: 900;
+        letter-spacing: 1.5px;
+        text-shadow: rgba(255, 255, 255, 0.3) 0px 5px 20px;
+    }
+
+    h3 {
+        letter-spacing: 2px;
+        font-weight: 300;
+        font-size: 15px;
+        font-style: italic;
+    }
+
+    p {
+        font-weight: 200;
+    }
+
+
+
+    body {
+        font-family: "Roboto Slab", serif;
+        color: white;
+    }
+
+
+    .form-floating textarea:focus {
+        height: 120px !important;
+        transition: all 0.3s;
+    }
+
+    .row {
+        margin-top: 100px;
+    }
+
+    main {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../imgs/pexels-sebastian-189349.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 100dvh !important;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .btn {
+        font-size: 20px;
+        width: 200px !important;
+        transition: ease 0.5s;
+    }
+
+
+    .btn:hover {
+        transform: scale(1.1);
+        box-shadow: rgba(255, 255, 255, 0.3) 0px 5px 12px 0px;
+    }
+
+
+    .text-focus-in {
+        -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }
+
+
+
+    @-webkit-keyframes text-focus-in {
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+
+    @keyframes text-focus-in {
+        0% {
+            -webkit-filter: blur(12px);
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-filter: blur(0px);
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
