@@ -33,7 +33,7 @@ var prevQuote = -1;
 
 function displayQuote() {
     var randomQuote;
-    do { randomQuote = Math.floor(Math.random() * arrQuotes.length); }  // I used 'do..while' not 'for' loop bc I want the code to run but just check the case once before displaying or needing to create new function to display and make 'return' of this one, 'do..while' here is better in my opinion //
+    do { randomQuote = Math.floor(Math.random() * arrQuotes.length); }  // I used 'do..while' not 'for' loop bc I want the code to run but just check the case once before displaying or needing to create new function to display and make 'return' of this one//
     while (randomQuote === prevQuote);
     addQuotes.innerHTML = arrQuotes[randomQuote];
     prevQuote = randomQuote;
